@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae5f1c13-bda6-4c5f-bc58-460bb95aa258" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obdGUI.py" afterPath="$PROJECT_DIR$/obdGUI.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="obdGUI.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +29,7 @@
       <file leaf-file-name="obdGUI.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/obdGUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="59" selection-start="627" selection-end="627" vertical-scroll-proportion="0.613941" vertical-offset="128" max-vertical-offset="697">
+            <state line="21" column="59" selection-start="627" selection-end="627" vertical-scroll-proportion="0.40246046" vertical-offset="128" max-vertical-offset="697">
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -117,8 +117,9 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -353,14 +354,20 @@
       <created>1375057053911</created>
       <updated>1375057053911</updated>
     </task>
+    <task id="LOCAL-00001" summary="Program now loops; Button now Label; Sized changed to match screen">
+      <created>1388621752731</created>
+      <updated>1388621752731</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="355" y="2" width="683" height="728" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2293853" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
@@ -386,6 +393,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Program now loops; Button now Label; Sized changed to match screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program now loops; Button now Label; Sized changed to match screen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -429,7 +438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/obdGUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="59" selection-start="627" selection-end="627" vertical-scroll-proportion="0.613941" vertical-offset="128" max-vertical-offset="697">
+        <state line="21" column="59" selection-start="627" selection-end="627" vertical-scroll-proportion="0.40246046" vertical-offset="128" max-vertical-offset="697">
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
