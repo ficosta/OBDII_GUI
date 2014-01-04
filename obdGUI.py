@@ -10,8 +10,7 @@ w, h = root.winfo_screenwidth(), root.winfo_screenheight()
 root.focus_set()
 root.geometry("%dx%d+0+0" % (w, h))
 root.bind("<Escape>", lambda e: e.widget.quit())
-#The window size
-#root.geometry("320x240")
+
 
 def getRPM():
     #ser = serial.Serial('/dev/ttyUSB0',
