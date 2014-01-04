@@ -5,7 +5,9 @@ import random
 
 root = Tk()
 w, h = root.winfo_screenwidth(), root.winfo_screenheight()
-root.overrideredirect(1)
+#Uncomment the line below to allow full screen.
+#root.overrideredirect(1)
+root.focus_set()
 root.geometry("%dx%d+0+0" % (w, h))
 root.bind("<Escape>", lambda e: e.widget.quit())
 #The window size
@@ -65,8 +67,5 @@ label2.grid(row=1, column=5, padx=5, pady=5)
 
 root.after(500, getRPM)
 root.after(500, getMPH)
-
-root.overrideredirect(1)
-root.focus_set()
 
 root.mainloop()
