@@ -84,11 +84,11 @@ console2.grid(row=0, column=4, columnspan=3)
 label2.grid(row=1, column=5, padx=5, pady=5)
 
 #Oil Temp Widget creation
-console3 = Text(root, width=4, height=1, font=("Helvetica", 64))
+console3 = Text(root, width=5, height=1, font=("Helvetica", 64))
 label3 = Label(root, text="Oil Temp", font=("Helvetica", 32))
 
 #Oil Temp Widget layout
-console3.grid(row=0, column=7, columnspan=5)
+console3.grid(row=0, column=7, columnspan=3)
 label3.grid(row=1, column=9, padx=5, pady=5)
 
 root.after(500, getRPM)
