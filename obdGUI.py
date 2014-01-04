@@ -2,9 +2,14 @@ from Tkinter import *
 import serial
 import time
 import random
+
 root = Tk()
+w, h = root.winfo_screenwidth(), root.winfo_screenheight()
+root.overrideredirect(1)
+root.geometry("%dx%d+0+0" % (w, h))
+root.bind("<Escape>", lambda e: e.widget.quit())
 #The window size
-root.geometry("320x240")
+#root.geometry("320x240")
 
 def getRPM():
     #ser = serial.Serial('/dev/ttyUSB0',
@@ -24,13 +29,44 @@ def getRPM():
     #ser.close()
     root.after(500, getRPM)
 
-#Widget creation
-console = Text(root, width=5, height=1, font=("Helvetica", 32))
-bu = Label(root, text="RPM")
+def getMPH():
+    #ser = serial.Serial('/dev/ttyUSB0',
+    #                    baudrate = 38400,
+    #                    parity = serial.PARITY_NONE,
+    #                    stopbits = serial.STOPBITS_ONE,
+    #                    bytesize = serial.EIGHTBITS,
+    #                    timeout = 0)
+    #ser.flushInput()
+    #ser.flushOutput()
+    #serial.write("010C\r")
+    #time.sleep(.15)
+    #data = ser.readline()
+    console2.delete(1.0, END)
+    console2.insert(INSERT, str(random.randint(0, 120)))
+    #console.insert(INSERT, str(data))
+    #ser.close()
+    root.after(500, getMPH)
 
-#Widget layout
+#RPM Widget creation
+console = Text(root, width=5, height=1, font=("Helvetica", 64))
+label = Label(root, text="RPM", font=("Helvetica", 32))
+
+#RPM Widget layout
 console.grid(row=0, column=0, columnspan=3)
-bu.grid(row=1, column=1, padx=5, pady=5)
+label.grid(row=1, column=1, padx=5, pady=5)
+
+#MPH Widget creation
+console2 = Text(root, width=4, height=1, font=("Helvetica", 64))
+label2 = Label(root, text="MPH", font=("Helvetica", 32))
+
+#MPH Widget layout
+console2.grid(row=0, column=4, columnspan=3)
+label2.grid(row=1, column=5, padx=5, pady=5)
 
 root.after(500, getRPM)
+root.after(500, getMPH)
+
+root.overrideredirect(1)
+root.focus_set()
+
 root.mainloop()
