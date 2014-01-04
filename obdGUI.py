@@ -13,19 +13,22 @@ root.bind("<Escape>", lambda e: e.widget.quit())
 
 
 def getRPM():
-    #ser = serial.Serial('/dev/ttyUSB0',
-    #                    baudrate = 38400,
-    #                    parity = serial.PARITY_NONE,
-    #                    stopbits = serial.STOPBITS_ONE,
-    #                    bytesize = serial.EIGHTBITS,
-    #                    timeout = 0)
-    #ser.flushInput()
-    #ser.flushOutput()
-    #serial.write("010C\r")
+    ser = serial.Serial('/dev/ttyUSB0',
+                        baudrate = 38400,
+                        parity = serial.PARITY_NONE,
+                        stopbits = serial.STOPBITS_ONE,
+                        bytesize = serial.EIGHTBITS,
+                        timeout = 0)
+    ser.flushInput()
+    ser.flushOutput()
+    serial.write("010C\r")
     #time.sleep(.15)
-    #data = ser.readline()
+    read = ser.readline()
+    data = int(read)
+    #data = random.randint(1000, 10000)
     console.delete(1.0, END)
-    console.insert(INSERT, str(random.randint(1000, 10000)))
+    #formula for RPM is ((A*256)+B)/4
+    console.insert(INSERT, str(((data * 256) + data)/4))
     #console.insert(INSERT, str(data))
     #ser.close()
     root.after(500, getRPM)
